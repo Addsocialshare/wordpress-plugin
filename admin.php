@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit();
 }
 /**
- * Register addsocialshare_settings and its sanitization callback. Add Login Radius meta box to pages and posts.
+ * 
  */
 function addsocialshare_options_init(){
 	register_setting( 'addsocialshare_setting_options', 'addsocialshare_settings', 'addsocialshare_validate_options' );
