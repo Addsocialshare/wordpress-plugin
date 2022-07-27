@@ -62,7 +62,7 @@ function addsocialshare_inline_share_scripts() {
     ?>
     <script>
         var assInlineSharing = document.createElement('script');
-        assInlineSharing.src = "<?php _e(plugins_url( 'js/socialshare.min.js?v=8<?php echo ADD_SOCIAL_SHARE_VERSION; ?>', __FILE__ ));?>";
+        assInlineSharing.src = "<?php _e(plugins_url( 'js/socialshare.min.js?v=8'.ADD_SOCIAL_SHARE_VERSION, __FILE__ ));?>";
 		assInlineSharing.onload = () => {
             var shareInlineInterval = setInterval(() => {
                 if (typeof (ass_SocialShare) == 'function') {
@@ -84,7 +84,7 @@ function addsocialshare_sticky_share_scripts() {
     ?>
     <script>
         var assStickySharing = document.createElement('script');
-        assInlineSharing.src = "<?php _e(plugins_url( 'js/socialshare.min.js?v=8<?php echo ADD_SOCIAL_SHARE_VERSION; ?>', __FILE__ ));?>";
+        assStickySharing.src = "<?php _e(plugins_url( 'js/socialshare.min.js?v=8'.ADD_SOCIAL_SHARE_VERSION, __FILE__ ));?>";
         assStickySharing.onload = () => {
             var shareStickyInterval = setInterval(() => {
                 if (typeof (ass_SocialShare) == 'function') {
